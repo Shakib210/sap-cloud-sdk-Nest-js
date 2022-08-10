@@ -12,7 +12,7 @@ export class CustomerSalesAreaService {
     return await customerSalesAreaApi.requestBuilder().getAll().execute({
       url: 'https://demo.derga.it:44370/',
       username: 'SFAUSER',
-      password: 'SFAdevelop?2022',
+      password: '******',
     });
   }
 }

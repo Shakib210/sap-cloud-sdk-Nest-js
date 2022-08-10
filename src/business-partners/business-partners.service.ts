@@ -11,7 +11,7 @@ export class BusinessPartnersService {
     return await businessPartnerApi.requestBuilder().getAll().execute({
       url: 'https://demo.derga.it:44370/',
       username: 'SFAUSER',
-      password: 'SFAdevelop?2022',
+      password: '******',
     });
   }
 }

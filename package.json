@@ -24,6 +24,7 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@sap/cloud-sdk-vdm-batch-service": "^2.1.0",
     "@sap/cloud-sdk-vdm-business-partner-service": "^2.1.0",
     "axios": "^0.27.2",
     "reflect-metadata": "^0.1.13",

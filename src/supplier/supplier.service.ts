@@ -1,14 +1,15 @@
 import {
+  Supplier,
   businessPartnerService,
-  Customer,
 } from '@sap/cloud-sdk-vdm-business-partner-service';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class CustomerService {
-  async getAllCustomer(): Promise<Customer[]> {
-    const { customerApi } = businessPartnerService();
-    return await customerApi.requestBuilder().getAll().execute({
+export class SupplierService {
+  async getAllSupplier(): Promise<Supplier[]> {
+    const { supplierApi } = businessPartnerService();
+
+    return await supplierApi.requestBuilder().getAll().execute({
       url: 'https://demo.derga.it:44370/',
       username: 'SFAUSER',
       password: '******',
