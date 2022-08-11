@@ -10,9 +10,7 @@ export class SupplierService {
     const { supplierApi } = businessPartnerService();
 
     return await supplierApi.requestBuilder().getAll().execute({
-      url: 'https://demo.derga.it:44370/',
-      username: 'SFAUSER',
-      password: '******',
+      destinationName: 'test-app',
     });
   }
 }

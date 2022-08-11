@@ -9,8 +9,6 @@ import { CustomerController } from './customer/customer.controller';
 import { CustomerService } from './customer/customer.service';
 import { SupplierController } from './supplier/supplier.controller';
 import { SupplierService } from './supplier/supplier.service';
-import { BatchController } from './batch/batch.controller';
-import { BatchService } from './batch/batch.service';
 
 @Module({
   imports: [],
@@ -20,7 +18,6 @@ import { BatchService } from './batch/batch.service';
     CustomerSalesAreaController,
     CustomerController,
     SupplierController,
-    BatchController,
   ],
   providers: [
     AppService,
@@ -28,7 +25,6 @@ import { BatchService } from './batch/batch.service';
     CustomerSalesAreaService,
     CustomerService,
     SupplierService,
-    BatchService,
   ],
 })
 export class AppModule {}

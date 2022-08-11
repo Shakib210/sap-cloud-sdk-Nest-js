@@ -1,0 +1,12 @@
+applications:
+  - name: test-app
+    path: ./
+    buildpacks:
+      - nodejs_buildpack
+    memory: 256M
+    command: npm run start:prod
+    random-route: true
+    services:
+      - my-destination
+      - my-xsuaa
+      - test

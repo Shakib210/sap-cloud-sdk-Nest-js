@@ -9,9 +9,7 @@ export class CustomerService {
   async getAllCustomer(): Promise<Customer[]> {
     const { customerApi } = businessPartnerService();
     return await customerApi.requestBuilder().getAll().execute({
-      url: 'https://demo.derga.it:44370/',
-      username: 'SFAUSER',
-      password: '******',
+      destinationName: 'test-app',
     });
   }
 }
