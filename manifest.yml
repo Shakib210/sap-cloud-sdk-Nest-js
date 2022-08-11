@@ -9,4 +9,4 @@ applications:
     services:
       - my-destination
       - my-xsuaa
-      - test
+      - test 
